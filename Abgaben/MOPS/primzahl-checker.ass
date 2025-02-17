@@ -1,0 +1,29 @@
+in a
+out a
+ld a
+st b
+ld b:ITERATION
+out b
+sub 1
+st b
+ld b
+out b
+ld a
+mod b
+st c
+out c
+cmp 0
+jeq ZERO
+cmp 1
+jeq ONE
+out c
+jmp ITERATION
+
+
+out 0:ZERO
+jmp END
+
+out 1:ONE
+jmp ITERATION
+
+end:END

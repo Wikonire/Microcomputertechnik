@@ -1,0 +1,8 @@
+; Addition von zwei Zahlen
+in a
+in b
+ld b
+add a
+st c
+out c
+end

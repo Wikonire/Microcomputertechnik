@@ -1,0 +1,19 @@
+; ggT
+in a
+in b
+ld a :COMPARE
+cmp b
+jeq ENDE
+jgt ERSETZE
+ld b
+sub a
+st b
+jmp COMPARE
+
+ld a :ERSETZE
+sub b
+st a
+jmp COMPARE
+
+out a :ENDE
+end

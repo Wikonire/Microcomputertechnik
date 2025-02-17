@@ -1,0 +1,27 @@
+;das ist a
+ld 31
+st a
+
+; das ist c
+ld 17
+st c
+
+; das ist m
+ld 256
+st h
+
+; das ist X0
+ld 0
+st g
+
+
+mul a:NEWNUMBER
+add c
+
+mod h
+st g
+
+out g
+jmp NEWNUMBER
+
+end

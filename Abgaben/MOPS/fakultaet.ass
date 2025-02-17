@@ -1,0 +1,17 @@
+in a
+ld a
+st b
+ld a :COMPARE
+cmp 1
+jeq END
+
+ld a
+sub 1
+st a
+mul b
+add c
+st c
+jmp COMPARE
+
+out c:END
+end
